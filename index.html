@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./assets/favicon.ico" type="image/x-icon">
+    <title>SkyWatcher | Dilpreet kaur</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="wrapper">
+        <div class="container">
+            <nav>
+                <img class="logo" src="./images/logo (3).png" alt="">
+                <h1>Sky Watcher</h1>
+            </nav>
+
+            <div class="tab-container">
+                <p class="tab" data-userWeather>Your Weather</p>
+                <p class="tab" user-searchWeather>Search Weather</p>
+            </div>
+
+            <div class="weather-container">
+
+                <!--Grant location container-->
+                <div class="grant-location-container">
+                    <h2>Explore global map of wind and weather</h2>
+                    <img src="./images/location.png" loading="lazy" width="80" height="80" alt="">
+                    <p>Grant Location Access</p>
+                    <p>Allow Access to get Weather Information</p>
+                    <button class="btn" data-grantAccess>Grant Access</button> 
+                </div>
+             
+                <!--Search form-->
+                <form class="form-container" data-searchForm>
+                    <input placeholder="Search for City..." data-searchInput>
+                    <button class="btn">
+                        <img src="./assets/search.png" loading="lazy" width="20" height="20"  alt="">
+                    </button>
+                </form>
+            
+                <!--Loading Screen Container-->
+                <div class="loading-container">
+                    <img src="./images/loading.gif" loading="lazy" width="150" height="150" alt="">
+                    <p>Loading</p>
+                </div>
+
+                <div data-error class="error">
+                    <img data-error-img src="./images/error.jpg" class="error-image" />
+                </div>
+                
+                <!--Show Weather-->
+                <div class="user-info-container">
+                    <div class="arrangement">
+                          <!--city name and Flag-->
+                         <div class="Name">
+                             <p  data-cityName></p>
+                             <img class="data-countryIcon" data-countryIcon>
+                        </div>
+                        <div class="desc">
+                             <!--weather Icon-->
+                             <img  class="weatherIcon" data-weatherIcon>
+                             <!-- weather description-->
+                             <p data-weatherDesc></p>
+                        </div>
+                    </div>
+                   
+                    
+                    <div class="temp-position">
+                          <!--temperature-->
+                          <p class="data-temp" data-temp></p>
+                    </div>
+                   
+
+                    <!--3 cards-parameter-->
+                    <div class="parameter-container">
+                    
+                        <!--card 1-->
+                        <div class="parameter">
+                            <img src="./assets/wind.png" alt="">
+                            <p>Windspeed</p>
+                            <p data-windspeed></p>
+                        </div>
+
+                        <!--card 2-->
+                        <div class="parameter">
+                            <img src="./assets/humidity.png" alt="">
+                            <p>Humidity</p>
+                            <p data-humidity></p>
+                        </div>
+    
+                        <!--card 3-->
+                        <div class="parameter">
+                            <img src="./assets/cloud.png" alt="">
+                            <p>Clouds</p>
+                            <p data-cloudiness></p>
+                        </div>
+    
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
