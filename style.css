@@ -23,7 +23,7 @@
     justify-content: center;
 }
 .container{
-    height: 630px;
+    height: 100%;
     width: 400px;
     background: url(./images/free-blank-map-asia.jpg);
     background-repeat: no-repeat;
@@ -43,9 +43,9 @@ nav{
 
 }
 .logo{
-    padding-left: 8px;
+    padding-left: 3px;
     height: 100px;
-    padding-right: 25px;
+    padding-right: 17px;
 }
 h1{
     font-size: 30px;
@@ -83,7 +83,7 @@ h1{
     width:330px;
     background-color: var(--colorLight2);
     top: 50%;
-    left: 8%;
+    left: 2%;
     border-radius: 15px;
     box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.201);
     display: flex;
