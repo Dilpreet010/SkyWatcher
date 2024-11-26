@@ -21,10 +21,11 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    background-color: #C9EAF6;
 }
 .container{
     height: 100%;
-    width: 400px;
+    width: 100%;
     background: url(./images/free-blank-map-asia.jpg);
     background-repeat: no-repeat;
     background-position: center;
@@ -83,7 +84,7 @@ h1{
     width:330px;
     background-color: var(--colorLight2);
     top: 50%;
-    left: 4%;
+    left: 40%;
     border-radius: 15px;
     box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.201);
     display: flex;
@@ -250,7 +251,7 @@ h1{
     width:90%;
     max-width:550px;
     margin-top: -30px;
-    margin-left: 20px;
+    margin-left: 500px;
     justify-content: center;
     align-items: center;
     gap: 0 10px; 
